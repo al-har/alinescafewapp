@@ -1,19 +1,4 @@
 {
-   "routes": [
-    {
-        "route": "/admin/*",
-        "allowedRoles": [
-            "authenticated"
-        ]
-    },
-    {
-        "route": "/login",
-        "rewrite": "/.auth/login/b2c"
-    },
-    {
-        "route": "/logout",
-        "redirect": "/.auth/logout"
-    }
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
@@ -36,3 +21,4 @@
       }
     }
   }
+}
